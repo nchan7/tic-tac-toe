@@ -1,3 +1,88 @@
+/* .hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+} */
+
 h1 {
-  color: purple;
+  color: ivory;
+  font-family: 'Papyrus';
+  font-size: 50px;
+  margin: 5px;
+}
+
+h2 {
+  color: ivory;
+  font-family: 'Papyrus';
+  font-size: 30px;
+}
+
+body {
+  background-image: url("../img/wallpaper.jpg");
+  background-size: cover; 
+  background-attachment: fixed; 
+  text-align: center;
+}
+
+div {
+  background-color: rgba(255, 255, 255, 0.5);
+  max-height: 150px;
+  max-width: 150px;
+}
+
+img {
+  /* max-height: 100%;
+  max-width: 100%; */
+  height: 150px;
+  width: 150px;
+}
+
+main{
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1em;
+  padding: 1em;
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "one two three"
+  "four five six"
+  "seven eight nine";
+  grid-gap: 1em;
+  
+}
+
+#board:nthchild(1) {
+  grid-area: "one"; 
+}
+#board:nthchild(2) {
+  grid-area: "two"; 
+}
+#board:nthchild(3) {
+  grid-area: "three"; 
+}
+#board:nthchild(4) {
+  grid-area: "four"; 
+}
+#board:nthchild(5) {
+  grid-area: "five"; 
+}
+#board:nthchild(6) {
+  grid-area: "six"; 
+}
+#board:nthchild(7) {
+  grid-area: "seven"; 
+}
+#board:nthchild(8) {
+  grid-area: "eight"; 
+}
+#board:nthchild(9) {
+  grid-area: "nine"; 
 }
